@@ -1,0 +1,264 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.cabecalhoFixo{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+header .coluna{}
+
+.logoYoutube{}
+.logoYoutube img{
+    width: 100%;
+    max-width: 90px;
+}
+
+.formularioPesquisa{
+    display: flex;
+    height: 40px;
+}
+.formularioPesquisa input{
+    width: 550px;
+    border: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.formularioPesquisa button{
+    width: 60px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 2px 2px 0;
+    background-color: #f8f8f8;
+}
+.formularioPesquisa button img{
+    width: 18px;
+}
+
+.imagemUsuario{}
+.imagemUsuario img{
+    width: 100%;
+    max-width: 35px;
+    border-radius: 100%;
+}
+
+main{
+    background-color: #f1f1f1;
+    padding: 60px 0 90px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.destaqueCanal{
+    background-image: url(../img/destaque.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+}
+
+.secaoMenuCanal{
+    background-color: #fff;
+}
+.secaoMenuCanal .container{}
+
+.detalhesCanal{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.detalhesCanal figure{
+    margin-right: 20px;
+}
+.detalhesCanal figure img{
+    width: 100%;
+    max-width: 80px;
+    border-radius: 100%;
+}
+
+.detalhesCanal__info{}
+.detalhesCanal__info h1{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.detalhesCanal__info p{
+    font-size: 14px;
+}
+
+.menusNavegacaoCanal{}
+
+.menusNavegacaoCanal__lista{
+    display: flex;
+    align-items: center;
+}
+.menusNavegacaoCanal__listaItem{}
+.menusNavegacaoCanal__listaItem a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    font-weight: 500;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 15px;
+}
+.menusNavegacaoCanal__listaItem a img{
+    width: 20px;
+}
+
+.containerVideosDestaque{
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.containerVideosDestaque .coluna{}
+.containerVideosDestaque .coluna:first-child{
+    width: 790px;
+}
+.containerVideosDestaque .coluna:last-child{
+    width: 400px;
+}
+
+.secaoVideosDestaque{}
+.secaoVideosDestaque h2{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.secaoVideosDestaque__lista{
+    margin-top: 20px;
+}
+.secaoVideosDestaque__listaItem{
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.secaoVideosDestaque__listaItem figure{
+    margin-right: 15px;
+}
+.secaoVideosDestaque__listaItem figure img{}
+
+.secaoVideosDestaque__sobreVideo{}
+.secaoVideosDestaque__sobreVideo h3{
+    font-size: 18px;
+}
+.secaoVideosDestaque__sobreVideo span{
+    font-size: 13px;
+    margin: 5px 0 10px;
+    display: block;
+}
+.secaoVideosDestaque__sobreVideo p{
+    font-size: 14px;
+    color: #606060;
+}
+
+.buttonAdicionarAFila{
+    background-color: #d9d9d9;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    padding: 4px 8px;
+    color: #606060;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.secaoAdicionarAFila{
+    background-color: #ededed;
+}
+
+.secaoAdicionarAFila__cabecalho{
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fafafa;
+}
+.secaoAdicionarAFila__cabecalho h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+.secaoAdicionarAFila__cabecalho p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.secaoAdicionarAFila__lista{
+    padding: 20px;
+}
+.secaoAdicionarAFila__listaItem{
+    display: flex;
+    margin-bottom: 10px;
+}
+.secaoAdicionarAFila__listaItem figure{
+    margin-right: 10px;
+}
+.secaoAdicionarAFila__listaItem figure img{
+    width: 100%;
+    max-width: 100px;
+}
+.secaoAdicionarAFila__listaItem h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.secaoTodosVideos{}
+.secaoTodosVideos .container{}
+
+.secaoTodosVideos h2{
+    display: flex;
+    align-items: center;
+    color: #606060;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 30px;
+}
+.secaoTodosVideos h2 img{
+    margin-right: 10px;
+}
+
+.secaoTodosVideos__lista{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.secaoTodosVideos__listaItem{
+    width: 210px;
+}
+.secaoTodosVideos__listaItem figure{}
+.secaoTodosVideos__listaItem figure img{
+    width: 100%;
+}
+.secaoTodosVideos__listaItem h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+    line-height: 20px;
+}
+.secaoTodosVideos__listaItem p{
+    font-size: 13px;
+    color: #606060;
+}
+.secaoTodosVideos__listaItem button{
+    margin-top: 10px;
+    font-size: 14px;
+}

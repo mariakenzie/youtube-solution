@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+
+    <link rel="stylesheet" text="text/css" href="./assets/css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" text="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalhoFixo">
+        <div class="coluna">
+            <figure class="logoYoutube">
+                <img src="./assets/img/logo.png" alt="Logo youtube">
+            </figure>
+        </div>
+        <div class="coluna">
+            <div class="formularioPesquisa">
+                <input type="text" placeholder="Pesquisar">
+                <button><img src="./assets/img/pesquisa.svg" alt="Icone pesquisar"></button>
+            </div>
+        </div>
+        <div class="coluna">
+            <figure class="imagemUsuario">
+                <img src="./assets/img/usuario.jpg" alt="Imagem usuário">
+            </figure>
+        </div>
+    </header>
+    
+    <main>
+        <div class="destaqueCanal"></div>
+
+        <section class="secaoMenuCanal">
+            <div class="container">
+                <div class="detalhesCanal">
+                    <figure>
+                        <img src="./assets/img/logocanal.jpg" alt="Imagem canal">
+                    </figure>
+                    <div class="detalhesCanal__info">
+                        <h1>Kenzie Academy Brasil</h1>
+                        <p>88,5 mil inscritos</p>
+                    </div>
+                </div>
+                <nav class="menusNavegacaoCanal">
+                    <ul class="menusNavegacaoCanal__lista">
+                        <li class="menusNavegacaoCanal__listaItem"><a href="#">início</a></li>
+                        <li class="menusNavegacaoCanal__listaItem"><a href="#">vídeos</a></li>
+                        <li class="menusNavegacaoCanal__listaItem"><a href="#">playlists</a></li>
+                        <li class="menusNavegacaoCanal__listaItem"><a href="#">comunidade</a></li>
+                        <li class="menusNavegacaoCanal__listaItem"><a href="#">canais</a></li>
+                        <li class="menusNavegacaoCanal__listaItem"><a href="#">sobre</a></li>
+                        <li class="menusNavegacaoCanal__listaItem"><a href="#"><img src="./assets/img/pesquisa.svg" alt="Ícone pesquisar"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <div class="containerVideosDestaque">
+            <div class="coluna">
+                <section class="secaoVideosDestaque">
+                    <h2>Conheça mais sobre a Kenzie Academy Brasil</h2>
+                    <ul class="secaoVideosDestaque__lista">
+                        <li class="secaoVideosDestaque__listaItem">
+                            <figure>
+                                <img src="./assets/img/thumb1.webp" alt="Thumbnail vídeo">
+                            </figure>
+                            <div class="secaoVideosDestaque__sobreVideo">
+                                <h3>Conheça todo o universo da Kenzie Academy Brasil</h3>
+                                <span>2,7 mil visualizações</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dolore vel assumenda porro consequatur cum labore corporis dicta voluptatibus a et dignissimos, neque eligendi quas similique, culpa, error rerum saepe!</p>
+                                <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                            </div>
+                        </li>
+                        <li class="secaoVideosDestaque__listaItem">
+                            <figure>
+                                <img src="./assets/img/thumb1.webp" alt="Thumbnail vídeo">
+                            </figure>
+                            <div class="secaoVideosDestaque__sobreVideo">
+                                <h3>Conheça todo o universo da Kenzie Academy Brasil</h3>
+                                <span>2,7 mil visualizações</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dolore vel assumenda porro consequatur cum labore corporis dicta voluptatibus a et dignissimos, neque eligendi quas similique, culpa, error rerum saepe!</p>
+                                <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="coluna">
+                <section class="secaoAdicionarAFila">
+                    <header class="secaoAdicionarAFila__cabecalho">
+                        <h2>Fila de reprodução</h2>
+                        <p>Kenzie Academy Brasil</p>
+                    </header>
+                    <ul class="secaoAdicionarAFila__lista">
+                        <li class="secaoAdicionarAFila__listaItem">
+                            <figure>
+                                <img src="./assets/img/thumb2.webp" alt="Ícone vídeo">
+                            </figure>
+                            <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        </li>
+                        <li class="secaoAdicionarAFila__listaItem">
+                            <figure>
+                                <img src="./assets/img/thumb2.webp" alt="Ícone vídeo">
+                            </figure>
+                            <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        </li>
+                        <li class="secaoAdicionarAFila__listaItem">
+                            <figure>
+                                <img src="./assets/img/thumb2.webp" alt="Ícone vídeo">
+                            </figure>
+                            <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <section class="secaoTodosVideos">
+            <div class="container">
+                <h2><img src="./assets/img/play.svg" alt="Ícone play"> Reproduzir todos</h2>
+                <ul class="secaoTodosVideos__lista">
+                    <li class="secaoTodosVideos__listaItem">
+                        <figure>
+                            <img src="./assets/img/thumb2.webp" alt="Imagem vídeo">
+                        </figure>
+                        <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        <p>2,1 mil visualizações</p>
+                        <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                    </li>
+                    <li class="secaoTodosVideos__listaItem">
+                        <figure>
+                            <img src="./assets/img/thumb2.webp" alt="Imagem vídeo">
+                        </figure>
+                        <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        <p>2,1 mil visualizações</p>
+                        <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                    </li>
+                    <li class="secaoTodosVideos__listaItem">
+                        <figure>
+                            <img src="./assets/img/thumb2.webp" alt="Imagem vídeo">
+                        </figure>
+                        <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        <p>2,1 mil visualizações</p>
+                        <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                    </li>
+                    <li class="secaoTodosVideos__listaItem">
+                        <figure>
+                            <img src="./assets/img/thumb2.webp" alt="Imagem vídeo">
+                        </figure>
+                        <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        <p>2,1 mil visualizações</p>
+                        <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                    </li>
+                    <li class="secaoTodosVideos__listaItem">
+                        <figure>
+                            <img src="./assets/img/thumb2.webp" alt="Imagem vídeo">
+                        </figure>
+                        <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        <p>2,1 mil visualizações</p>
+                        <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                    </li>
+                    <li class="secaoTodosVideos__listaItem">
+                        <figure>
+                            <img src="./assets/img/thumb2.webp" alt="Imagem vídeo">
+                        </figure>
+                        <h3>Bate-papo com estudantes da Kenzie #7</h3>
+                        <p>2,1 mil visualizações</p>
+                        <button class="buttonAdicionarAFila">Adicionar a fila</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
