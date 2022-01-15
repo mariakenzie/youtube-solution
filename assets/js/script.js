@@ -73,24 +73,26 @@ function construirLayout(video, container) {
     li.dataset.id = video.id;
     li.appendChild(figure);
     li.appendChild(div);
-
-    if(container.classList.contains('secaoAdicionarAFila__lista')){
-        li.addEventListener('click', removerDaFila);
-    }
-
+    
     container.appendChild(li);
 }
 
 function adicionarAFila(event) {
     const videoClicado = event.target.closest('li');
-    const idVideoClicado = videoClicado.dataset.id;
+    const cloneVideoClicado = videoClicado.cloneNode(true);
 
-    const video = listaVideos[idVideoClicado];
-
-    construirLayout(video, containerVideosFila);
+    containerVideosFila.appendChild(cloneVideoClicado);
 }
 
+containerVideosFila.addEventListener('click', removerDaFila);
+
 function removerDaFila(event) {
-    const videoClicado = event.currentTarget;
-    videoClicado.remove();
+    const elementoClicado = event.target;
+
+    if(elementoClicado.tagName !== 'LI'){
+        const videoClicado = elementoClicado.closest('li');
+        videoClicado.remove();
+    } else {
+        elementoClicado.remove();
+    }
 }
