@@ -144,27 +144,27 @@ main{
 .secaoVideosDestaque__lista{
     margin-top: 20px;
 }
-.secaoVideosDestaque__listaItem{
+.secaoVideosDestaque__lista li{
     display: flex;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #d9d9d9;
 }
-.secaoVideosDestaque__listaItem figure{
+.secaoVideosDestaque__lista li figure{
     margin-right: 15px;
 }
-.secaoVideosDestaque__listaItem figure img{}
+.secaoVideosDestaque__lista li figure img{}
 
-.secaoVideosDestaque__sobreVideo{}
-.secaoVideosDestaque__sobreVideo h3{
+.secaoVideosDestaque__lista li div{}
+.secaoVideosDestaque__lista li div h3{
     font-size: 18px;
 }
-.secaoVideosDestaque__sobreVideo span{
+.secaoVideosDestaque__lista li div span{
     font-size: 13px;
     margin: 5px 0 10px;
     display: block;
 }
-.secaoVideosDestaque__sobreVideo p{
+.secaoVideosDestaque__lista li div p{
     font-size: 14px;
     color: #606060;
 }
@@ -203,21 +203,25 @@ main{
 
 .secaoAdicionarAFila__lista{
     padding: 20px;
+    height: 490px;
+    overflow-y: scroll;
 }
-.secaoAdicionarAFila__listaItem{
+.secaoAdicionarAFila__lista li{
     display: flex;
     margin-bottom: 10px;
 }
-.secaoAdicionarAFila__listaItem figure{
+.secaoAdicionarAFila__lista li figure{
     margin-right: 10px;
 }
-.secaoAdicionarAFila__listaItem figure img{
-    width: 100%;
-    max-width: 100px;
+.secaoAdicionarAFila__lista li figure img{
+    width: 100px;
 }
-.secaoAdicionarAFila__listaItem h3{
+.secaoAdicionarAFila__lista li h3{
     font-size: 15px;
     font-weight: 500;
+}
+.secaoAdicionarAFila__lista li p, .secaoAdicionarAFila__lista li span, .secaoAdicionarAFila__lista li button{
+    display: none;
 }
 
 .secaoTodosVideos{}
@@ -241,24 +245,28 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.secaoTodosVideos__listaItem{
+.secaoTodosVideos__lista li{
     width: 210px;
 }
-.secaoTodosVideos__listaItem figure{}
-.secaoTodosVideos__listaItem figure img{
+.secaoTodosVideos__lista li figure{}
+.secaoTodosVideos__lista li figure img{
     width: 100%;
 }
-.secaoTodosVideos__listaItem h3{
+.secaoTodosVideos__lista li h3{
     font-size: 15px;
     font-weight: 500;
     margin: 10px 0;
     line-height: 20px;
 }
-.secaoTodosVideos__listaItem p{
+.secaoTodosVideos__lista li span{
     font-size: 13px;
     color: #606060;
 }
-.secaoTodosVideos__listaItem button{
+.secaoTodosVideos__lista li button{
     margin-top: 10px;
     font-size: 14px;
+}
+
+.secaoTodosVideos__lista li p{
+    display: none;
 }
